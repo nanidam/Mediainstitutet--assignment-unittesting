@@ -1,8 +1,32 @@
 {
+  "scripts": {
+    "test": "npx jest --watchAll"
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
     "@parcel/transformer-typescript-tsc": "^2.8.0",
     "@parcel/validator-typescript": "^2.8.0",
-    "parcel": "^2.8.0"
+    "@types/jest": "^29.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^29.4.0",
+    "jest-environment-jsdom": "^29.4.0",
+    "parcel": "^2.8.0",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.8.0",
+    "ts-jest": "^29.0.5"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverage": true,
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "html"
+    ]
   }
 }
